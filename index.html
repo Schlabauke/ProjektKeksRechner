@@ -36,21 +36,20 @@
             <select for="pal" name="pal" id="pal">
                 <option name="pal" value=".95">Schlafen</option>
                 <option name="pal" value="1.2">Nur Sitzen oder Liegen</option>
-                <option name="pal" value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen
-                    Aktivität in der Freizeit, z.B. Büroarbeit</option>
-                <option name="pal" value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
-                    Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
-                <option name="pal" value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
-                    Handwerker, Mechaniker, Hausfrauen</option>
+                <option name="pal" value="1.5">Ausschließlich sitzende Tätigkeit</option>
+                <option name="pal" value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit
+                </option>
+                <option name="pal" value="1.9">Überwiegend gehende oder stehende Tätigkeit</option>
                 <option name="pal" value="2.2">Körperlich anstrengende berufliche Arbeit
                 </option>
             </select>
         </article>
-        <input type="button" onclick="giveMeCookies()" value="Give me Cookies!">
+        <input id="button" type="button" onclick="giveMeCookies()" value="Give me Cookies!">
         <article>
-            <p>Wie viele Kekse kann ich essen?</p>
             <p id="outputKcal"></p>
             <p id="outputCookies"></p>
+            <h2>Wie viele Kekse kann ich essen?</h2>
+            <p><span id="cookieRatio"></span>und noch mehr Kekse</p>
         </article>
     </form>
     <script src="assets/js/main.js"></script>

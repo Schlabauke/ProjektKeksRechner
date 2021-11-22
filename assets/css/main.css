@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+body {
+    border:5px solid burlywood;
+    border-radius: 5px;
+    font-family: 'Alegreya Sans', sans-serif;
+   background: url("https://images.unsplash.com/photo-1618923850107-d1a234d7a73a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvb2tpZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60") center/contain no-repeat;
+padding:1em 2em;
+width:65vw;
+}
+form {
+    margin-right: 20vw;
+}
+article {
+    background: rgb(139, 87, 38);
+    width:28.8vw;
+    margin: 1em 0;
+    padding:1%;
+    color:cornsilk;
+}
+h2{
+    color:rgb(241, 227, 206);
+}
+input {
+    padding: 1%;
+}
+#button {
+   margin-left: 10vw;;
+    background: rgb(139, 87, 38);
+    padding:2%;
+    color:cornsilk;
+    border:2px solid rgb(44, 18, 0);
+    font-size: 18px;
+}
+#button:hover {
+    background: rgb(44, 18, 0);
+    border:2px solid rgb(139, 87, 38);
+}
