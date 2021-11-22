@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Kalorienrechner</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <h1>Keksbudget-Rechner</h1>
+    <form onsubmit="return false">
+        <article>
+            <h2>Körpergröße</h2>
+            <input type="number" for="height" id="height" placeholder="Körpergröße in cm">
+        </article>
+        <article>
+            <h2>Gewicht</h2>
+            <input type="number" for="weight" id="weight" placeholder="Gewicht in kg">
+        </article>
+        <article>
+            <h2>Alter</h2>
+            <input type="number" for="age" id="age" placeholder="Alter in Jahren">
+        </article>
+        <article>
+            <h2>Körperbau</h2>
+            <input type="radio" name="bodyimage" id="men">
+            <label for="bodyimage">männlich</label>
+            <input type="radio" name="bodyimage" id="women">
+            <label for="bodyimage">weiblich</label>
+        </article>
+        <article>
+            <h2>Arbeits- & Freizeitaktivitäten</h2>
+            <select for="pal" name="pal" id="pal">
+                <option name="pal" value=".95">Schlafen</option>
+                <option name="pal" value="1.2">Nur Sitzen oder Liegen</option>
+                <option name="pal" value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen
+                    Aktivität in der Freizeit, z.B. Büroarbeit</option>
+                <option name="pal" value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                    Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                <option name="pal" value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
+                    Handwerker, Mechaniker, Hausfrauen</option>
+                <option name="pal" value="2.2">Körperlich anstrengende berufliche Arbeit
+                </option>
+            </select>
+        </article>
+        <input type="button" onclick="giveMeCookies()" value="Give me Cookies!">
+        <article>
+            <p>Wie viele Kekse kann ich essen?</p>
+            <p id="outputKcal"></p>
+            <p id="outputCookies"></p>
+        </article>
+    </form>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
